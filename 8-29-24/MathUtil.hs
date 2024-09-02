@@ -20,3 +20,7 @@ len2 xs = if xs == [] then 0 else 1 + len2 (tail xs)
 len3 xs
     | xs == [] = 0
     | otherwise = 1 + len3 (tail xs)
+
+myFibonacci 0 = 0
+myFibonacci 1 = 1
+myFibonacci n = myFibonacci (n - 1) + myFibonacci (n - 2)
